@@ -1,0 +1,46 @@
+#economy
+  padding 35px 0
+  @media screen and (min-width 319px) and (max-width 480px)
+    padding 30px 0
+  .economy-item
+    margin-bottom 110px
+    @media screen and (min-width 319px) and (max-width 480px)
+      margin-bottom 20px
+  .economy_img
+    img
+      display inline-block
+      padding-bottom 10px
+      border-bottom 1px solid #c6946f
+      @media screen and (min-width 319px) and (max-width 480px)
+        width 100%
+  .owl-carousel
+    div
+      img
+        width auto
+        display inline-block
+        @media screen and (min-width 319px) and (max-width 480px)
+          margin 0 auto
+          display block
+    &.economy
+      div
+        img
+          width 100%
+    &.owl-theme
+      .owl-dots
+        position relative
+        overflow hidden
+        .owl-dot
+          &:first-child::before, &:last-child::after
+            content ""
+            position absolute
+            height 100%
+            width 9999px
+            top 50%
+            border-top-style solid
+            border-top-width 1px
+            border-top-color #c6946f
+            margin-top -4px
+          &:first-child::before
+            right 62%
+          &:last-child::after
+            left 62%

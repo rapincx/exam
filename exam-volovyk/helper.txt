@@ -1,0 +1,28 @@
+In recent versions of Git you can add multiple pushurls for a given remote. Use the following to add two pushurls to your origin:
+git remote set-url --add --push origin git://original/repo.git
+git remote set-url --add --push origin git://another/repo.git
+So when you push to origin, it will push to both repositories.
+
+You can get the same effect by adding an extra push URL for your origin remote. For example, if the URLs of your existing remotes are as follows:
+
+$ git remote -v
+origin  me@original:something.git (fetch)
+origin  me@original:something.git (push)
+my_other_remote git://somewhere/something.git (fetch)
+my_other_remote git://somewhere/something.git (push)
+
+You could do:
+
+ git remote set-url --add --push origin git://somewhere/something.git
+Then, git push origin will push to both repositories. You might want to set up a new remote called both for this, however, to avoid confusion. For example:
+
+ git remote add both me@original:something.git
+ git remote set-url --add --push both me@original:something.git
+ git remote set-url --add --push both git://somewhere/something.git
+
+ https://wp-kama.ru/function/register_post_type https://developer.wordpress.org/resource/dashicons/
+ https://wp-kama.ru/function/register_taxonomy
+
+ http://themefoundation.com/wordpress-meta-boxes-guide/
+ http://themefoundation.com/toolkit-tutorial-theme-customizer/
+ https://code.tutsplus.com/tutorials/how-to-create-custom-wordpress-writemeta-boxes--wp-20336

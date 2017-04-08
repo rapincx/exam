@@ -1,0 +1,116 @@
+$main-header-text-color = #7c7c7c
+$main-font-family = "Open Sans"
+$header-color = #16120f
+
+.row
+  max-width 60rem
+
+.row .row
+  margin-left 0
+  margin-right 0
+
+.row.row-auto
+  margin 0 auto
+  margin-left auto
+  margin-right auto
+
+.no-padd-right
+  padding-right 0
+  @media screen and (min-width 319px) and (max-width 480px)
+    padding-right .625rem
+
+.no-padd-left
+  padding-left 0
+  @media screen and (min-width 319px) and (max-width 480px)
+    padding-left .625rem
+
+.section-header
+  color #3a3531
+  font 700 36px $main-font-family
+  text-align center
+  margin-bottom 38px
+  &.orange
+    color #c6946f
+
+.section-mini-header
+  color $header-color
+  font 600 14px $main-font-family
+  text-align center
+  margin-bottom 17px
+
+span.orange
+  color #c6946f
+
+.main-header
+  color $header-color
+  font 700 24px $main-font-family
+  margin-bottom 35px
+  @media screen and (min-width 319px) and (max-width 480px)
+    font-size 22px
+    text-align center
+    margin-top 20px
+    line-height 1.2
+  &.white
+    color #FFFFFF
+.main-desc
+  color $header-color
+  font 400 16px $main-font-family
+  &.white
+    color #FFFFFF
+
+.order-button
+  display inline-block
+  color #ffffff
+  font 400 16px/16px $main-font-family
+  min-width 213px
+  margin 20px auto 0
+  border-radius 32px
+  padding 15px
+  border 2px solid #c6946f
+  transition color .5s, background-color .5s, border .5s
+  &.black
+    color #252525
+  &:hover
+    color #ffffff
+    background-color #c6946f
+    border 2px dashed #c6946f
+
+.reveal
+  input
+    display block
+    max-width 213px
+    margin 0 auto
+    background transparent
+    padding 13px
+    outline 0
+    border 0
+    border-bottom 1px solid #c6946f
+    box-shadow: none
+    text-align center
+    &::-webkit-input-placeholder
+      font 400 18px $main-font-family
+      text-transform uppercase
+      color #000000
+    &::-moz-placeholder
+      font 400 18px $main-font-family
+      text-transform uppercase
+      color #000000
+    &:-moz-placeholder
+      font 400 18px $main-font-family
+      text-transform uppercase
+      color #000000
+    &:-ms-input-placeholder
+      font 400 18px $main-font-family
+      text-transform uppercase
+      color #000000
+    &:focus
+      outline 0
+      border 1px solid #c6946f
+      box-shadow: none
+  .order-button
+    color #c6946f
+    transition color .5s, background-color .5s, border .5s
+    &:hover
+      color #ffffff
+      background-color #c6946f
+      border 2px dashed #c6946f

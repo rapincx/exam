@@ -1,0 +1,126 @@
+header
+  background-image url("../img/header-bg-1.jpg"), url("../img/header-bg-2.jpg")
+  background-position left top, right top
+  background-size contain, contain
+  background-repeat no-repeat
+  overflow hidden
+  height 100vh
+  max-height 645px
+  @media screen and (max-width: 768px)
+    background-image url("../img/header-bg-1.jpg")
+    background-position left top
+    background-size cover
+    background-repeat no-repeat
+  .menu, .menu.horizontal
+    @media screen and (min-width 319px) and (max-width 480px)
+      flex-wrap wrap
+  .header-main
+    overflow hidden
+    height auto
+  .title-bar
+    color #65534a
+    background transparent
+  .menu-icon:after
+    background #65534a
+    box-shadow 0 7px 0 #65534a,0 14px 0 #65534a
+  .header-menu
+    background-color #ffffff
+    height 60px
+    @media screen and (min-width 319px) and (max-width 768px)
+      height auto
+    .row
+      height 100%
+    .header-phone
+      color #7c7c7c
+      font 600 18px $main-font-family
+      &:hover
+        color #65534a
+        font-weight 700
+      @media screen and (min-width 319px) and (max-width 480px)
+        font-size 14px
+    .header_logo
+      font-size 2em
+      line-height 1
+      margin 0
+      a:nth-child(2)
+        color #65534a
+        font 400 14px/12px $main-font-family
+        display inline-block
+        width 60px
+        word-wrap break-word
+        vertical-align middle
+        span.bold
+          font-weight 700
+    .menu
+      li
+        a
+          padding 10px 1rem
+          color $main-header-text-color
+          font 400 14px $main-font-family
+          &:hover
+            margin-bottom -1px
+            color #65534a
+            border-bottom 1px solid #65534a
+  .circle-wrapper
+    margin -60px auto 0
+    border 13px solid #c6946f
+    background url("../img/header-circle.png") no-repeat
+    background-color #292929
+    background-size cover
+    border-radius 100%
+    height 698px
+    width 698px
+    padding 9px
+    @media screen and (min-width 319px) and (max-width 480px)
+      height auto
+      width 100%
+      margin 0
+      border-radius 0
+      padding 0
+      background none
+      background-color transparent
+      border none
+    .circle-content
+      height 100%
+      border 4px dotted #ffffff
+      border-radius 100%
+      @media screen and (min-width 319px) and (max-width 480px)
+        border none
+        border-radius 0
+      .row
+        height 100%
+      h1
+        color #ffffff
+        font 700 52px/53px $main-font-family
+        text-transform uppercase
+        margin-bottom 21px
+        @media screen and (min-width 319px) and (max-width 480px)
+          font-size 32px
+          margin 50px auto 10px
+      span
+        font 600 20px/36px $main-font-family
+        color #e5c1a6
+        vertical-align bottom
+        &.around
+          font-size 25px
+          font-weight 400
+      .button_order
+        max-width 263px
+        max-height 68px
+        margin 34px auto 0
+        border-radius 34px
+        border 2px solid #e5c1a6
+        padding 4px
+        transition background-color .5s, border-color .5s
+        div
+          border-radius 30px
+          border 2px dotted #ffffff
+          transition border-color .5s
+          a
+            color #ffffff
+            font 600 16px/12px $main-font-family
+        &:hover
+          background-color #c6946f
+          border-color #65534a
+          div
+            border-color #65534a

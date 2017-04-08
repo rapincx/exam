@@ -1,0 +1,73 @@
+#projects
+  padding 60px 0
+  @media screen and (min-width 319px) and (max-width 480px)
+    padding 30px 0
+  .projects-item
+    margin-bottom 50px
+    @media screen and (min-width 319px) and (max-width 480px)
+      margin-bottom 25px
+    .project-item__details
+      .project_name
+        color #272727
+        font 700 18px $main-font-family
+        margin-bottom 25px
+      ul.project_options
+        margin-left 10px
+        margin-bottom 20px
+        list-style-image url(../img/project-li-img.png)
+        .project_opt__item
+          span
+            vertical-align bottom
+            color #272727
+            font 400 14px/20px $main-font-family
+            &:first-child
+              font-weight 700
+            &.orange
+              color #c6946f
+      .project_review
+        margin-top 20px
+        .review-header
+          color #272727
+          font 700 14px/14px $main-font-family
+          text-transform uppercase
+          margin-bottom 5px
+        p
+          color #272727
+          font 400 14px $main-font-family
+        .review-user
+          color #272727
+          font 400 14px/14px $main-font-family
+          font-style italic
+          text-align right
+    .owl-carousel
+      div
+        img
+          width auto
+          display inline-block
+      &.economy
+        div
+          img
+            width 100%
+      &.owl-theme
+        .owl-dots
+          position relative
+          overflow hidden
+          .owl-dot
+            &:first-child::before, &:last-child::after
+              content ""
+              position absolute
+              height 100%
+              width 9999px
+              top 50%
+              border-top-style solid
+              border-top-width 1px
+              border-top-color #c6946f
+              margin-top -4px
+            &:first-child::before
+              right 58%
+              @media screen and (min-width 319px) and (max-width 480px)
+                right 62%
+            &:last-child::after
+              left 58%
+              @media screen and (min-width 319px) and (max-width 480px)
+                left 62%
